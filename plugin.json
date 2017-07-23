@@ -1,6 +1,6 @@
 {
     "name": "LoginFailLog",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Logs failed login attempts together with user IP. Useful for protecting Piwik against brute force attacks via fail2ban or similar tools.",
     "require": {
         "piwik": ">=3.0.0-b1,<4.0.0-b1"
@@ -19,5 +19,5 @@
     },
     "license": "GPL v3+",
     "keywords": ["authentication", "fail2ban", "login", "log"],
-    "homepage": "https://github.com/patrickbr/piwik-LoginFailLog"
+    "homepage": "https://patrickbrosi.de/en/projects/piwikloginfaillog/"
 }
