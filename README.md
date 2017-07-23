@@ -5,7 +5,7 @@
 This simple plugin enables logging of failed authentication attempts in Piwik, nothing more, nothing less. Failed login attempts are logged like this:
 
 ```
-WARNING LoginFailLog[2017-07-22 23:35:20] [b215d] Failed login from 172.217.22.227 'patrick'.
+WARNING LoginFailLog[2017-07-22 23:35:20] [b215d] Failed login from 172.217.22.227 with username 'patrick'.
 WARNING LoginFailLog[2017-07-22 23:35:20] [b215d] Failed login from 172.217.22.227 with username 'patrick'.
 ```
 
