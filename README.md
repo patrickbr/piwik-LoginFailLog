@@ -9,7 +9,7 @@ WARNING LoginFailLog[2017-07-22 23:35:20] [b215d] Failed login from 172.217.22.2
 WARNING LoginFailLog[2017-07-22 23:35:20] [b215d] Failed login from 172.217.22.227 with username 'patrick'.
 ```
 
-This is extremely useful if you want to secure your Piwik instance with fail2ban or similar tools that work on log files. For example, the following filter can be used with fail2ban to detect and count login fails:
+This is useful if you want to secure your Piwik instance with fail2ban or similar tools that work on log files. For example, the following filter can be used with fail2ban to detect and count login fails:
 
 ```
 # Fail2Ban configuration file for Piwik with LoginFailLog plugin
@@ -20,7 +20,7 @@ failregex = .* Failed login from <HOST> with username .*
 
 ## Incompatibility problems because of Piwik UTC logging
 
-By default, Piwik logs everything in UTC time. This is not configurable and may cause problems with fail2ban. If your fail2ban jail does not work, *try increasing the `findtime` option in your jail by the offset between your local timezone and UTC*.
+By default, Piwik logs everything in UTC time. This is not configurable and may cause problems with fail2ban. If your fail2ban jail does not work, **try increasing the `findtime` option in your jail by the offset between your local timezone and UTC**.
 
 ## License
 
