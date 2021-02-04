@@ -28,7 +28,7 @@ class LoginFailLog extends \Piwik\Plugin
     {
         $ip = StaticContainer::get('Piwik\IP');
         $logger = StaticContainer::get('Psr\Log\LoggerInterface');
-        $logger->warning('Failed login from {ip} with username \'{user}\'.', array(
+        $logger->warning('Failed PIWIK login from {ip} with username \'{user}\'.', array(
             'ip' => $ip->getIpFromHeader(),
             'user' => $login
         ));
